@@ -1,0 +1,135 @@
+/* Reset y base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+/* Contenedor principal (para sticky footer si quieres) */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 100px;
+}
+
+/* Encabezado */
+header img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #000000;
+    padding: 20px;
+    text-align: left;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+}
+
+/* Diseño de sección con imagen y texto en dos columnas */
+.contenido-flex {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.contenido-flex .texto {
+    flex: 1 1 65%;
+    min-width: 300px;
+}
+
+.contenido-flex .imagen {
+    flex: 1 1 30%;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenido-flex .imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .contenido-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido-flex .imagen,
+    .contenido-flex .texto {
+        flex: 1 1 100%;
+    }
+
+    .contenido-flex .imagen img {
+        margin: 0 auto;
+    }
+}
+
+/* Extra (si quieres limitar el ancho del texto central) */
+.texto-limitado {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: justify;
+}
