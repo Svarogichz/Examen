@@ -1,4 +1,3 @@
-/* Reset y base */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,13 +10,11 @@ html, body {
     background-color: #f0f0f0;
 }
 
-/* Párrafos */
 p {
     margin-bottom: 1em;
     line-height: 1.6;
 }
 
-/* Contenedor principal (para sticky footer si quieres) */
 .contenedor {
     display: flex;
     flex-direction: column;
@@ -27,7 +24,6 @@ p {
     padding: 0 100px;
 }
 
-/* Encabezado */
 header img {
     width: 100%;
     height: auto;
@@ -36,7 +32,6 @@ header img {
     display: block;
 }
 
-/* Barra de navegación */
 nav {
     background-color: #000000;
     padding: 20px;
@@ -50,14 +45,12 @@ nav a {
     font-weight: bold;
 }
 
-/* Contenido principal */
 main {
     flex: 1;
     padding: 20px;
     text-align: justify;
 }
 
-/* Diseño de sección con imagen y texto en dos columnas */
 .contenido-flex {
     display: flex;
     gap: 30px;
@@ -86,13 +79,11 @@ main {
     max-width: 300px;
 }
 
-/* Títulos */
 h1, h2 {
     color: #000000;
     margin-bottom: 10px;
 }
 
-/* Footer */
 footer {
     text-align: center;
     background-color: #000000;
@@ -100,7 +91,6 @@ footer {
     padding: 10px;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
     nav {
         text-align: center;
@@ -126,7 +116,6 @@ footer {
     }
 }
 
-/* Extra (si quieres limitar el ancho del texto central) */
 .texto-limitado {
     max-width: 700px;
     margin: 0 auto;
